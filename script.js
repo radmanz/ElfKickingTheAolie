@@ -20,6 +20,7 @@ if (socket.readyState === WebSocket.OPEN) {
 
 function setup() {
   // get all the DOM elements that need listeners:
+  statusDot = document.getElementById('dot');
   incomingSpan = document.getElementById('incoming');
   outgoingText = document.getElementById('outgoing');
   connectionSpan = document.getElementById('connection');
@@ -50,6 +51,7 @@ function changeConnection(event) {
 
 function openConnection() {
   // display the change of state:
+  statusDot.className = "dot-green";
   connectionSpan.innerHTML = "true";
   connectButton.value = "Disconnect";
   if (socket.readyState === WebSocket.OPEN) {
@@ -59,6 +61,9 @@ function openConnection() {
 
 function closeConnection() {
   // display the change of state:
+  statusDot.className = "dot-red";
+  
+
   connectionSpan.innerHTML = "false";
   connectButton.value = "Connect";
 }

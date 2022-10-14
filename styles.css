@@ -26,6 +26,7 @@ html {
     color:antiquewhite;
     background-color: #19212b;
     font-family: 'Roboto';
+    overflow: hidden;
 }
 
 input {
