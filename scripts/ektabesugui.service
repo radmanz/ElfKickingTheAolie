@@ -5,11 +5,11 @@ After=graphical.target
 
 [Service]
 Environment=DISPLAY=:0.0
-Environment=XAUTHORITY=/home/radmanz/.Xauthority
+Environment=XAUTHORITY=/home/ektarian/.Xauthority
 Type=simple
-ExecStart=/bin/bash /home/radmanz/ElfKickingTheAolie/scripts/start.sh
+ExecStart=/bin/bash /home/ektarian/ElfKickingTheAolie/scripts/start.sh
 Restart=on-abort
-User=radmanz
+User=ektarian
 
 [Install]
 WantedBy=graphical.target
