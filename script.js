@@ -73,7 +73,7 @@ function readIncomingMessage(event) {
   document.getElementById("incoming").textContent = JSON.stringify(data, null, 2);
 
   if(data.id === 1){ //admin_peers
-    //     document.getElementById("total_peers").textContent = data.result.length;
+    document.getElementById("total_peers").textContent = data.result.length;
   }else if(data.id === 2){ //admin_nodeInfo
     document.getElementById("enode").textContent = data.result.enode;
     if(data.result.protocols.eth.hasOwnProperty('head')){
@@ -81,7 +81,7 @@ function readIncomingMessage(event) {
         socket.send('{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["'+ data.result.protocols.eth.head +'", false],"id":5}');        
     }
   }else if(data.id === 3){ //debug_metrics
-    document.getElementById("total_peers").textContent = data.result.peers.connected_total;
+    // document.getElementById("total_peers").textContent = data.result.peers.connected_total;
   }else if(data.id === 4){ //eth_subscription newHeads+Transactions
     data = JSON.parse(transaction);
     document.getElementById("tx_hash").textContent = data.params.result.hash;
