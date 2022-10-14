@@ -13,12 +13,19 @@ by Tom Igoe
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,
 html {
     height: 100%;
     color:antiquewhite;
     background-color: #19212b;
-    font-family: Roboto;
+    font-family: 'Roboto';
 }
 
 input {
@@ -43,6 +50,11 @@ span {
     background-size: cover;
 }
 
+.bold {
+    font-family: 'Roboto-Bold';
+    font-weight: 900;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -52,11 +64,15 @@ span {
 }
 
 .peers {
-    font-size: 2vw;
+    font-size: 2.3vw;
+}
+
+.enode {
+    font-size: 2.3vw;
 }
 
 .block-data {
-    font-size: 2vw;
+    font-size: 2.3vw;
     vertical-align: bottom;
     position: absolute;
     bottom: 0px;
