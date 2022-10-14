@@ -1,0 +1,97 @@
+/* 
+Style sheet for template. 
+Since all the elements are inputs or spans, this just sets them 
+in columns.  
+created 6 Jan 2021 
+by Tom Igoe
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+    color:antiquewhite;
+    background-color: #19212b;
+    font-family: Roboto;
+}
+
+input {
+    position: sticky;
+    left: 200px;
+}
+
+span {
+    position: sticky;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("./assets/images/bg-black.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.rpc {
+    font-size: 4vw;
+}
+
+.peers {
+    font-size: 2vw;
+}
+
+.block-data {
+    font-size: 2vw;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0px;
+    text-align-last: right;
+    right: 4px;
+}
+
+.tx-data {
+    font-size: 2vw;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0px;
+    text-align-last: right;
+    right: 4px;
+    visibility: hidden;
+}
+
+.dot-red {
+    position: absolute;
+    left: 96%;
+    top: 19px;
+    height: 1.8vw;
+    width: 1.8vw;
+    background-color: rgb(167, 37, 37);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-green {
+    position: absolute;
+    left: 96%;
+    top: 19px;
+    height: 1.8vw;
+    width: 1.8vw;
+    background-color: rgb(50, 203, 27);
+    border-radius: 50%;
+    display: inline-block;
+}

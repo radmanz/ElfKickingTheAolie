@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>WebSocket</title>
+</head>
+
+<body class="bg">
+
+    <div class="rpc">RPC: <span id="device_ip">0.0.0.0</span></div>
+        <div><span class="dot-green"></span></div>
+    <div class="peers">Connected Peers: <span id="total_peers">false</span></div>
+    <div class="peers"><span id="enode">false</span></div>
+    <br />
+
+
+    <div class="block-data">
+        <b>Lastest Block:</b><br>
+        Block Number: <span id="blk_number">false</span><br>
+        Block Miner: <span id="blk_miner">false</span><br>
+        Block Timestamp: <span id="blk_timestamp">false</span><br>
+    </div>
+        
+    <div class="tx-data">Block
+        <b>Last Transaction data:</b><br>
+        blockHash: <span id="last_tx_hash">None</span><br>
+        From: <span id="last_tx_from">None</span><br>
+        To: <span id="last_tx_to">None</span><br>
+    </div>
+        
+
+        
+    <div class="debug hidden">
+        --------------------------<br>
+        Connected to server: <span id="connection">false</span><br>
+        <input type="button" id="connectButton" value="Connect"><br>
+        Outgoing message: <input type="text" id="outgoing"><br>
+        Incoming message:
+        <pre id="incoming"></pre><br>
+    </div>
+        
+    </div>
+</body>
+
+</html>
