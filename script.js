@@ -1,7 +1,7 @@
 /*
   WebSocket connection Script
 */
-const serverURL = 'ws://192.168.50.242:8546';
+const serverURL = 'ws://127.0.0.1:8546';
 
 let socket;
 // variables for the DOM elements:
